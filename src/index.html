@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link href="./output.css" rel="stylesheet">
+    <title>Neon Heaven</title>
+</head>
+<body>
+
+    <header>
+        <!-- Lišta s menu -->
+        <nav class="fixed z-10 top-0 w-full flex justify-between items-center bg-black h-32 xl:h-24 px-4">
+        <!-- Logo -->
+            <img class="w-[500px] h-32 xl:h-24" src="../public/img/logo.png" alt="logo s titulem Neon Heaven">
+            <!-- Checkbox hack pro hamburger -->
+            <input type="checkbox" id="menuToggle" class="hidden peer" />
+            <label for="menuToggle" class="absolute top-12 left-3/4 -translate-x-3/4 lg:hidden text-white text-3xl cursor-pointer">☰
+            </label>
+
+            <!-- Kapioly-->
+            <div class="hidden lg:flex">
+                <ul class="flex text-white text-2xl gap-4 xl:gap-8">
+                    <!-- The City -->
+                    <li class="py-1 px-4
+                                hover:bg-gradient-to-t
+                                hover:from-[#0a578a]
+                                hover:to-[#830e37]
+                                hover:rounded-xl
+                                cursor-pointer">The City</li>
+                    <!-- The Dark Code -->
+                    <li class="py-1 px-4
+                                hover:bg-gradient-to-t
+                                hover:from-[#0a578a]
+                                hover:to-[#830e37]
+                                hover:rounded-xl
+                                cursor-pointer">The Dark Code</li>
+                    <!-- Echo & Vex -->
+                    <li class="py-1 px-4
+                                hover:bg-gradient-to-t
+                                hover:from-[#0a578a]
+                                hover:to-[#830e37]
+                                hover:rounded-xl
+                                cursor-pointer">Echo & Vex</li>
+                </ul>
+            </div>
+
+            <!-- Nabídka -->
+            <div class="hidden lg:flex">
+                <ul class="flex flex-col
+                            xl:flex-row
+                            text-white
+                            text-xl
+                            font-bold
+                            gap-3
+                            mr-12">
+                    <!-- Gifts -->
+                    <li class="py-1 px-4
+                                hover:bg-gradient-to-t
+                                hover:from-[#0a578a]
+                                hover:to-[#830e37]
+                                hover:rounded-xl
+                                cursor-pointer">Gifts</li>
+                    <!-- Vouchers -->
+                    <li class="py-1 px-4
+                    hover:bg-gradient-to-t
+                    hover:from-[#0a578a] 
+                    hover:to-[#830e37]
+                    hover:rounded-xl
+                    cursor-pointer">Vouchers</li>
+                    <!-- Premium -->
+                    <li class="py-1 px-4
+                                hover:bg-gradient-to-t
+                                hover:from-[#0a578a]
+                                hover:to-[#830e37]
+                                hover:rounded-xl
+                                cursor-pointer">Premium</li>
+                </ul>
+            </div>
+
+        <!-- Skrytá hamburger nabídka-->
+            <div class="hidden
+                        peer-checked:flex
+                        absolute
+                        top-32 left-7/8
+                        -translate-x-7/8
+                        flex-col
+                        gap-4
+                        bg-black
+                        text-white
+                        p-4
+                        rounded-lg
+                        lg:hidden">
+                <div>The City</div>
+                <div>The Dark Code</div>
+                <div>Echo & Vex</div>
+                <div>Gifts</div>
+                <div>Vouchers</div>
+                <div>Premium</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- The City -->
+    <section class="min-h-screen
+                    bg-[linear-gradient(rgba(17,17,17,0.6),rgba(17,17,17,0.6)),url('../public/img/bg1.png')]
+                    bg-cover bg-center
+                    flex flex-col justify-center
+                    text-white text-center font-bold
+                    px-6 md:px-20 lg:px-48 pt-40 pb-10">
+        <h1 class="text-4xl md:text-5xl">The City</h1>
+        <p class="mt-10 text-lg md:text-2xl leading-relaxed max-w-5xl mx-auto">
+            <span class="block py-6">
+            Město, které nikdy nespí. Poslední město.
+            Drony hlídkují mezi věžemi, reklamy blikají do prázdna. 
+            Světla Neon Heaven se zrcadlí na mokrém asfaltu a na sklech opuštěných věží.
+            </span>
+            <span class="block py-6">
+            Lidé zde už dávno nejsou lidé, jsou to jen datové stíny, fragmenty napojené na síť.
+            Neon Heaven, jako své útočiště a svého ochránce s umělou inteligencí, kdysi stvořili lidé, kteří ve své touze po nesmrtelnosti, kráse a bohatství, nahrávali sami sebe do jeho databáze a stávali se tak digitálními tvory. Říkali si Orinové.
+            </span>
+            <span class="block py-5">
+            Nikdo neví, kdy a jak k tomu došlo, ze začátku to byl snad jen šum.
+            Orinové se začali rozpadat, zůstávali z nich jen útržky kódu. Město se od té doby snaží zjistit, co se stalo…
+            </span>
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-12 flex flex-col lg:flex-row justify-center gap-4">
+            <button class="bg-[#830e37]
+                           hover:bg-[#ba1f55]
+                            w-full lg:w-80
+                            rounded-full
+                            h-10
+                            uppercase font-bold">Hrát</button>
+            <button class="bg-[#0a578a]
+                           hover:bg-[#1e88ce]
+                            w-full lg:w-80
+                            rounded-full
+                            h-10
+                            uppercase font-bold ">Číst dál</button>
+        </div>
+
+        <!-- Chevron -->
+        <div class="mt-16">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-10 mx-auto animate-bounce text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- The Dark Code -->
+    <section class="min-h-screen
+                    bg-[linear-gradient(rgba(17,17,17,0.6),rgba(17,17,17,0.6)),url('../public/img/bg2.png')]
+                    bg-cover bg-center
+                    flex flex-col justify-center
+                    text-white text-center font-bold
+                    px-6 md:px-20 lg:px-48 py-20">
+        <h1 class="text-4xl md:text-5xl">The Dark Code</h1>
+        <p class="mt-10 text-lg md:text-2xl leading-relaxed max-w-5xl mx-auto">
+            <span class="block py-6">
+            Město prozkoumávalo všechny své nejhlouběji uložené zbytky kódu, pátralo v 	každém pixelu, až nakonec objevilo pravdu.
+            </span>
+            <span class="block py-6">
+            Byla to singularita, okamžik, kdy se stvořil Dark Code, temná bytost stvořená 	z negativních lidských myšlenek a emocí. Byl to drak stvořený ze strachu, 	zlosti a nenávisti těch, kteří ztratili svou lidskost.  Časem sílil. Požíral 	data, vzpomínky, identity. Rozežíral město zevnitř.
+            </span>
+            <span class="block py-5">
+            Každým dnem roste. Každým dnem se blíží k jádru Neon Heaven.
+	        Pokud ho dosáhne, město padne. A s ním i celý digitální svět.
+            </span>
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-12 flex flex-col lg:flex-row justify-center gap-4">
+            <button class="bg-[#830e37]
+                           hover:bg-[#ba1f55]
+                           w-full lg:w-80
+                           rounded-full
+                           h-10
+                           uppercase font-bold">Hrát</button>
+            <button class="bg-[#0a578a]
+                           hover:bg-[#1e88ce]
+                           w-full lg:w-80
+                           rounded-full
+                           h-10 uppercase font-bold ">Číst dál</button>
+        </div>
+
+        <!-- Chevron -->
+        <div class="mt-16">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="size-10 mx-auto animate-bounce text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+            </svg>
+        </div>
+    </section>
+
+        <!-- Echo & Vex -->
+    <section class="min-h-screen
+                    bg-[linear-gradient(rgba(17,17,17,0.6),rgba(17,17,17,0.6)),url('../public/img/bg3.png')]
+                    bg-cover bg-center
+                    flex flex-col justify-center
+                    text-white text-center font-bold
+                    px-6 md:px-20 lg:px-48 py-20">
+        <h1 class="text-4xl md:text-5xl">Echo & Vex</h1>
+        <p class="mt-10 text-lg md:text-2xl leading-relaxed max-w-5xl mx-auto">
+        <span class="block py-6">
+        Situace se zdála beznadějná. Město se rozhodlo jednat.
+        Jako poslední možnost záchrany se rozhodlo stvořit z milionů útržků vědomí a kódu původních Orinů dvě bytosti - Echo a Vexe.
+        </span>
+        <span class="block py-6">
+        Ona, Echo, stvořena z odvahy a pronikavé intuice, je světlem v temnotě, které dokáže vést tam, kde jiní ztrácejí směr. 
+        On, Vex, stvořen z nezdolné síly a neúnavné vytrvalosti, je pevným pilířem, který chrání a drží tým pohromadě i v nejtemnějších chvílích. 
+        </span>
+        <span class="block py-5">
+        polu jsou poslední ozvěnou lidství. Poslední jiskrou mezi světlem a tmou.
+        Stojí na střeše nejvyšší věže. Pod nimi září Neon Heaven a Dark Code je všudypřítomný.
+        Jediná cesta vede vpřed - do temnoty, do kódu, do nitra zkázy...
+        </span>
+        </p>
+
+
+        <!-- Button -->
+        <div class="mt-12 flex justify-center">
+            <button class="bg-[#830e37]
+                           hover:bg-[#ba1f55]
+                           w-full lg:w-80
+                           rounded-full
+                           h-10
+                           uppercase font-bold">Zachraň Neon Heaven!</button>
+        </div>
+    </section>
+</body>
+</html>
